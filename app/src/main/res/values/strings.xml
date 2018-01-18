@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">RugbyScore</string>
+    <string name="team_a">Team A</string>
+    <string name="team_b">Team B</string>
+    <string name="BtnScoreTry">Try</string>
+    <string name="BtnScoreConv">Conversion</string>
+    <string name="BtnScorePnlty">Penalty Goal</string>
+    <string name="BtnScoreDrpGol">Drop Goal</string>
 </resources>

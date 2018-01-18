@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="BtnTeamSize">80dp</dimen>
+    <dimen name="BtnTeamPad">10dp</dimen>
+    <dimen name="BtnScoreSize"> 120dp </dimen>
+    <dimen name="BtnSpace">10dp</dimen>
+</resources>
