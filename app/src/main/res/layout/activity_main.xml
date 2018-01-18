@@ -18,16 +18,18 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/BtnTeamSize"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="15dp"
+            android:paddingVertical="@dimen/BtnTeamPad"
+            android:paddingBottom="@dimen/BtnTeamPad"
             android:layout_marginBottom="15dp"
-            android:padding="10dp"
-            android:text="Team A"
-            android:textColor="#263238"
-            android:background="#FF8A80"
-            android:textStyle="bold"/>
+            android:text="@string/team_a"
+            android:textColor="@color/BtnTeamColor"
+            android:background="@color/BtnTeamBackGrnd"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
         <TextView
             android:id="@+id/team_a_score"
             android:layout_width="wrap_content"
@@ -39,45 +41,45 @@
             android:textSize="20dp"
             android:textStyle="bold"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/BtnScoreSize"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="10dp"
-            android:text="Try"
+            android:layout_marginBottom="@dimen/BtnSpace"
+            android:text="@string/BtnScoreTry"
             android:onClick="tryA"
-            android:textColor="#2E7D32"
-            android:background="#F0F4C3"/>
+            android:textColor="@color/BtnScoreTxtCol"
+            android:textAlignment="center"
+            android:background="@color/BtnScoreBckgCol"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/BtnScoreSize"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="10dp"
-            android:padding="5dp"
-            android:text="Conversion"
+            android:layout_marginBottom="@dimen/BtnSpace"
+            android:text="@string/BtnScoreConv"
             android:onClick="conversionA"
-            android:textColor="#2E7D32"
-            android:background="#F0F4C3"/>
+            android:textColor="@color/BtnScoreTxtCol"
+            android:textAlignment="center"
+            android:background="@color/BtnScoreBckgCol"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/BtnScoreSize"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="10dp"
-            android:padding="5dp"
-            android:text="Penalty goal"
+            android:layout_marginBottom="@dimen/BtnSpace"
+            android:text="@string/BtnScorePnlty"
             android:onClick="penaltyA"
-            android:textColor="#2E7D32"
-            android:background="#F0F4C3"/>
+            android:textColor="@color/BtnScoreTxtCol"
+            android:textAlignment="center"
+            android:background="@color/BtnScoreBckgCol"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/BtnScoreSize"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="10dp"
-            android:padding="5dp"
-            android:text="Drop goal"
+            android:layout_marginBottom="@dimen/BtnSpace"
+            android:text="@string/BtnScoreDrpGol"
             android:onClick="dropA"
-            android:textColor="#2E7D32"
-            android:background="#F0F4C3"/>
-
+            android:textColor="@color/BtnScoreTxtCol"
+            android:textAlignment="center"
+            android:background="@color/BtnScoreBckgCol"/>
     </LinearLayout>
 
     <View
@@ -92,16 +94,18 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/BtnTeamSize"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="15dp"
+            android:paddingVertical="@dimen/BtnTeamPad"
+            android:paddingBottom="@dimen/BtnTeamPad"
             android:layout_marginBottom="15dp"
-            android:padding="10dp"
-            android:text="Team B"
-            android:textColor="#263238"
-            android:background="#FF8A80"
-            android:textStyle="bold"/>
+            android:text="@string/team_b"
+            android:textColor="@color/BtnTeamColor"
+            android:background="@color/BtnTeamBackGrnd"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
         <TextView
             android:id="@+id/team_b_score"
             android:layout_width="wrap_content"
@@ -113,44 +117,45 @@
             android:textSize="20dp"
             android:textStyle="bold"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/BtnScoreSize"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="10dp"
-            android:text="Try"
+            android:layout_marginBottom="@dimen/BtnSpace"
+            android:text="@string/BtnScoreTry"
             android:onClick="tryB"
-            android:textColor="#2E7D32"
-            android:background="#F0F4C3"/>
+            android:textColor="@color/BtnScoreTxtCol"
+            android:textAlignment="center"
+            android:background="@color/BtnScoreBckgCol"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/BtnScoreSize"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="10dp"
-            android:padding="5dp"
-            android:text="Conversion"
+            android:layout_marginBottom="@dimen/BtnSpace"
+            android:text="@string/BtnScoreConv"
             android:onClick="conversionB"
-            android:textColor="#2E7D32"
-            android:background="#F0F4C3"/>
+            android:textColor="@color/BtnScoreTxtCol"
+            android:textAlignment="center"
+            android:background="@color/BtnScoreBckgCol"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/BtnScoreSize"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="10dp"
-            android:padding="5dp"
-            android:text="Penalty goal"
+            android:layout_marginBottom="@dimen/BtnSpace"
+            android:text="@string/BtnScorePnlty"
             android:onClick="penaltyB"
-            android:textColor="#2E7D32"
-            android:background="#F0F4C3"/>
+            android:textColor="@color/BtnScoreTxtCol"
+            android:textAlignment="center"
+            android:background="@color/BtnScoreBckgCol"/>
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/BtnScoreSize"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="10dp"
-            android:padding="5dp"
-            android:text="Drop goal"
+            android:layout_marginBottom="@dimen/BtnSpace"
+            android:text="@string/BtnScoreDrpGol"
             android:onClick="dropB"
-            android:textColor="#2E7D32"
-            android:background="#F0F4C3"/>
+            android:textColor="@color/BtnScoreTxtCol"
+            android:textAlignment="center"
+            android:background="@color/BtnScoreBckgCol"/>
     </LinearLayout>
   </LinearLayout>
     <Button
