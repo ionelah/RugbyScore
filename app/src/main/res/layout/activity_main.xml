@@ -18,13 +18,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="@dimen/BtnTeamSize"
+            android:layout_width="@dimen/TxtViewSize"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="15dp"
-            android:paddingVertical="@dimen/BtnTeamPad"
-            android:paddingBottom="@dimen/BtnTeamPad"
-            android:layout_marginBottom="15dp"
+            android:layout_marginTop="@dimen/TxtViewMargin"
+            android:paddingVertical="@dimen/TxtViewPad"
+            android:paddingBottom="@dimen/TxtViewPad"
+            android:layout_marginBottom="@dimen/TxtViewMargin"
             android:text="@string/team_a"
             android:textColor="@color/BtnTeamColor"
             android:background="@color/BtnTeamBackGrnd"
@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="@dimen/TxtViewMargin"
             android:padding="20dp"
             android:text="0"
             android:textSize="20dp"
@@ -85,7 +85,7 @@
     <View
         android:layout_width="1dp"
         android:layout_height="match_parent"
-        android:background="#F44336"/>
+        android:background="@color/ColorView"/>
 
     <LinearLayout
         android:layout_width="0dp"
@@ -94,7 +94,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="@dimen/BtnTeamSize"
+            android:layout_width="@dimen/TxtViewSize"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="15dp"
@@ -166,8 +166,8 @@
         android:padding="10dp"
         android:text="reset"
         android:onClick="newgame"
-        android:textColor="#263238"
-        android:background="#F9A825"
+        android:textColor="@color/BtnRstCol"
+        android:background="@color/BtnRstBg"
         android:textStyle="bold"/>
 
 </RelativeLayout>
