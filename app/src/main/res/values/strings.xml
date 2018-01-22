@@ -6,4 +6,5 @@
     <string name="BtnScoreConv">Conversion</string>
     <string name="BtnScorePnlty">Penalty Goal</string>
     <string name="BtnScoreDrpGol">Drop Goal</string>
+    <string name="BtnRst">reset</string>
 </resources>
