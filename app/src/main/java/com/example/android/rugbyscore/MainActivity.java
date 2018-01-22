@@ -18,6 +18,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putInt("pointsForA", pointsForA);
+        outState.putInt("pointsForB", pointsForB);
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        pointsForA = savedInstanceState.getInt("pointsForA");
+        pointsForB = savedInstanceState.getInt("pointsForB");
+        displayForTeamA(pointsForA);
+        displayForTeamB(pointsForB);
+    }
+
     /**
      * this method is called when try button is clicked
      * increase the score with 5 points
