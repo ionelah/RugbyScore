@@ -7,4 +7,7 @@
     <dimen name="BtnSpace">10dp</dimen>
     <dimen name="TxtViewMargin">15dp</dimen>
     <dimen name="TxtViewPad">10dp</dimen>
+    <dimen name="padding">10dp</dimen>
+    <dimen name="TeamPadding">20dp</dimen>
+    <dimen name="TeamTxtSize">20sp</dimen>
 </resources>
