@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:fillViewport="false"
     android:orientation="vertical"
-    android:padding="10dp"
+    android:padding="@dimen/padding"
     tools:context="com.example.android.rugbyscore.MainActivity">
 
     <LinearLayout
@@ -45,9 +45,9 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginBottom="@dimen/TxtViewMargin"
-                    android:padding="20dp"
+                    android:padding="@dimen/TeamPadding"
                     android:text="0"
-                    android:textSize="20dp"
+                    android:textSize="@dimen/TeamTxtSize"
                     android:textStyle="bold" />
 
                 <Button
@@ -110,8 +110,8 @@
                     android:layout_width="@dimen/TxtViewSize"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="15dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="@dimen/TxtViewMargin"
+                    android:layout_marginTop="@dimen/TxtViewMargin"
                     android:background="@color/BtnTeamBackGrnd"
                     android:paddingBottom="@dimen/BtnTeamPad"
                     android:paddingVertical="@dimen/BtnTeamPad"
@@ -125,10 +125,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="15dp"
-                    android:padding="20dp"
+                    android:layout_marginBottom="@dimen/BtnSpace"
+                    android:padding="@dimen/TeamPadding"
                     android:text="0"
-                    android:textSize="20dp"
+                    android:textSize="@dimen/TeamTxtSize"
                     android:textStyle="bold" />
 
                 <Button
