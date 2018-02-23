@@ -10,4 +10,7 @@
     <dimen name="padding">10dp</dimen>
     <dimen name="TeamPadding">20dp</dimen>
     <dimen name="TeamTxtSize">20sp</dimen>
+    <dimen name="LinLayWidth">0dp</dimen>
+    <!--dimen for the line between the two columns -->
+    <dimen name="ViewWidth">1dp</dimen>
 </resources>

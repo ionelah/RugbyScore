@@ -46,49 +46,6 @@ public class MainActivity extends AppCompatActivity {
         pointsForA = pointsForA + 5;
         displayForTeamA(pointsForA);
     }
-    /**
-     * this method is called when the conversion button is clicked
-     * increase the score with 2 points
-     */
-
-    public void conversionA (View view){
-        pointsForA = pointsForA + 2;
-        displayForTeamA(pointsForA);
-    }
-
-    /**
-     * display methond when the penalty button is clicked
-     * increase the score with 3 point
-     */
-
-    public void penaltyA(View view){
-        pointsForA = pointsForA + 3;
-        displayForTeamA(pointsForA);
-    }
-
-    /**
-     * display methond when the drop goal button is clicked
-     * increase the score with 3 point
-     */
-
-    public void dropA(View view){
-        pointsForA = pointsForA + 3;
-        displayForTeamA(pointsForA);
-    }
-
-    /**
-     * displays the given score for Team A
-     */
-    public void displayForTeamA(int score) {
-        scoreViewA.setText(String.valueOf(score));
-    }
-    /**
-     * displays the given score for Team B
-     */
-    public void displayForTeamB(int score) {
-
-        scoreViewB.setText(String.valueOf(score));
-    }
 
     /**
      * this method is called when the try button is clicked
@@ -98,11 +55,20 @@ public class MainActivity extends AppCompatActivity {
         pointsForB = pointsForB + 5;
         displayForTeamB(pointsForB);
     }
+
     /**
      * this method is called when the conversion button is clicked
      * increase the score with 2 points
      */
+    public void conversionA (View view){
+        pointsForA = pointsForA + 2;
+        displayForTeamA(pointsForA);
+    }
 
+    /**
+     * this method is called when the conversion button is clicked
+     * increase the score with 2 points
+     */
     public void conversionB (View view){
         pointsForB = pointsForB + 2;
         displayForTeamB(pointsForB);
@@ -112,16 +78,50 @@ public class MainActivity extends AppCompatActivity {
      * display methond when the penalty button is clicked
      * increase the score with 3 point
      */
+    public void penaltyA(View view){
+        pointsForA = pointsForA + 3;
+        displayForTeamA(pointsForA);
+    }
 
+    /**
+     * display methond when the penalty button is clicked
+     * increase the score with 3 point
+     */
     public void penaltyB(View view){
         pointsForB = pointsForB + 3;
         displayForTeamB(pointsForB);
+    }
+
+    /**
+     * display methond when the drop goal button is clicked
+     * increase the score with 3 point
+     */
+    public void dropA(View view){
+        pointsForA = pointsForA + 3;
+        displayForTeamA(pointsForA);
     }
 
     public void dropB(View view){
         pointsForB = pointsForB + 3;
         displayForTeamB(pointsForB);
     }
+
+    /**
+     * displays the given score for Team A
+     */
+    public void displayForTeamA(int score) {
+
+        scoreViewA.setText(String.valueOf(score));
+    }
+
+    /**
+     * displays the given score for Team B
+     */
+    public void displayForTeamB(int score) {
+
+        scoreViewB.setText(String.valueOf(score));
+    }
+
     /**
      * reset the score to 0
      */

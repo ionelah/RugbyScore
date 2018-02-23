@@ -20,174 +20,86 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="@dimen/LinLayWidth"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="@dimen/TxtViewSize"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/TxtViewMargin"
-                    android:layout_marginTop="@dimen/TxtViewMargin"
-                    android:background="@color/BtnTeamBackGrnd"
-                    android:paddingBottom="@dimen/TxtViewPad"
-                    android:paddingVertical="@dimen/TxtViewPad"
-                    android:text="@string/team_a"
-                    android:textAlignment="center"
-                    android:textColor="@color/BtnTeamColor"
-                    android:textStyle="bold" />
+                    style="@style/TextViewNameOfTeam"
+                    android:text="@string/teamA" />
 
                 <TextView
                     android:id="@+id/team_a_score"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/TxtViewMargin"
-                    android:padding="@dimen/TeamPadding"
-                    android:text="0"
-                    android:textSize="@dimen/TeamTxtSize"
-                    android:textStyle="bold" />
+                    style="@style/TextViewScore"
+                    android:text="@string/Score" />
 
                 <Button
-                    android:layout_width="@dimen/BtnScoreSize"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/BtnSpace"
-                    android:background="@color/BtnScoreBckgCol"
+                    style="@style/BtnScoreTry"
                     android:onClick="tryA"
-                    android:text="@string/BtnScoreTry"
-                    android:textAlignment="center"
-                    android:textColor="@color/BtnScoreTxtCol" />
+                    android:text="@string/BtnScoreTry"/>
 
                 <Button
-                    android:layout_width="@dimen/BtnScoreSize"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/BtnSpace"
-                    android:background="@color/BtnScoreBckgCol"
+                    style="@style/BtnScoreConv"
                     android:onClick="conversionA"
-                    android:text="@string/BtnScoreConv"
-                    android:textAlignment="center"
-                    android:textColor="@color/BtnScoreTxtCol" />
+                    android:text="@string/BtnScoreConv" />
 
                 <Button
-                    android:layout_width="@dimen/BtnScoreSize"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/BtnSpace"
-                    android:background="@color/BtnScoreBckgCol"
+                    style="@style/BtnScorePnlty"
                     android:onClick="penaltyA"
-                    android:text="@string/BtnScorePnlty"
-                    android:textAlignment="center"
-                    android:textColor="@color/BtnScoreTxtCol" />
+                    android:text="@string/BtnScorePnlty" />
 
                 <Button
-                    android:layout_width="@dimen/BtnScoreSize"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/BtnSpace"
-                    android:background="@color/BtnScoreBckgCol"
+                    style="@style/BtnScoreDrpGol"
                     android:onClick="dropA"
-                    android:text="@string/BtnScoreDrpGol"
-                    android:textAlignment="center"
-                    android:textColor="@color/BtnScoreTxtCol" />
+                    android:text="@string/BtnScoreDrpGol" />
             </LinearLayout>
 
             <View
-                android:layout_width="1dp"
+                android:layout_width="@dimen/ViewWidth"
                 android:layout_height="match_parent"
                 android:background="@color/ColorView" />
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="@dimen/LinLayWidth"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="@dimen/TxtViewSize"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/TxtViewMargin"
-                    android:layout_marginTop="@dimen/TxtViewMargin"
-                    android:background="@color/BtnTeamBackGrnd"
-                    android:paddingBottom="@dimen/BtnTeamPad"
-                    android:paddingVertical="@dimen/BtnTeamPad"
-                    android:text="@string/team_b"
-                    android:textAlignment="center"
-                    android:textColor="@color/BtnTeamColor"
-                    android:textStyle="bold" />
+                    style="@style/TextViewNameOfTeam"
+                    android:text="@string/teamB"/>
 
                 <TextView
                     android:id="@+id/team_b_score"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/BtnSpace"
-                    android:padding="@dimen/TeamPadding"
-                    android:text="0"
-                    android:textSize="@dimen/TeamTxtSize"
-                    android:textStyle="bold" />
+                    style="@style/TextViewScore"
+                    android:text="@string/Score" />
 
                 <Button
-                    android:layout_width="@dimen/BtnScoreSize"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/BtnSpace"
-                    android:background="@color/BtnScoreBckgCol"
+                    style="@style/BtnScoreTry"
                     android:onClick="tryB"
-                    android:text="@string/BtnScoreTry"
-                    android:textAlignment="center"
-                    android:textColor="@color/BtnScoreTxtCol" />
+                    android:text="@string/BtnScoreTry" />
 
                 <Button
-                    android:layout_width="@dimen/BtnScoreSize"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/BtnSpace"
-                    android:background="@color/BtnScoreBckgCol"
+                    style="@style/BtnScoreConv"
                     android:onClick="conversionB"
-                    android:text="@string/BtnScoreConv"
-                    android:textAlignment="center"
-                    android:textColor="@color/BtnScoreTxtCol" />
+                    android:text="@string/BtnScoreConv" />
 
                 <Button
-                    android:layout_width="@dimen/BtnScoreSize"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/BtnSpace"
-                    android:background="@color/BtnScoreBckgCol"
+                    style="@style/BtnScorePnlty"
                     android:onClick="penaltyB"
-                    android:text="@string/BtnScorePnlty"
-                    android:textAlignment="center"
-                    android:textColor="@color/BtnScoreTxtCol" />
+                    android:text="@string/BtnScorePnlty" />
 
                 <Button
-                    android:layout_width="@dimen/BtnScoreSize"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/BtnSpace"
-                    android:background="@color/BtnScoreBckgCol"
+                    style="@style/BtnScoreDrpGol"
                     android:onClick="dropB"
-                    android:text="@string/BtnScoreDrpGol"
-                    android:textAlignment="center"
-                    android:textColor="@color/BtnScoreTxtCol" />
+                    android:text="@string/BtnScoreDrpGol" />
             </LinearLayout>
         </LinearLayout>
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="@dimen/BtnSpace"
-            android:layout_marginTop="@dimen/BtnSpace"
-            android:background="@color/BtnRstBg"
+            style="@style/BtnRst"
             android:onClick="newgame"
-            android:padding="@dimen/BtnTeamPad"
-            android:text="@string/BtnRst"
-            android:textColor="@color/BtnRstCol"
-            android:textStyle="bold" />
+            android:text="@string/BtnRst" />
     </LinearLayout>
 </ScrollView>
